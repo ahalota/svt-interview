@@ -1,0 +1,22 @@
+{
+  "name": "svt-interview",
+  "version": "1.0.0",
+  "description": "SVT Robotics - Take Home Recruiting Assessment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahalota/svt-interview.git"
+  },
+  "author": "Anika Halota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahalota/svt-interview/issues"
+  },
+  "homepage": "https://github.com/ahalota/svt-interview#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
