@@ -22,7 +22,7 @@ app.post('/api/robots/closest', (req: Request, res: Response, next: NextFunction
     return;
   }
 
-  // 2. Get robot list. Go through both if first fails. If both fail, return error message.
+  // 2. Get robot list. TODO: If first endpoint fails, try the second one
   https.get(robotListEndpoints[0], (resp) => {
     let data = '';
     resp.on('data', (chunk: string) => {
