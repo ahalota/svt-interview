@@ -13,7 +13,6 @@ app.listen(port, () => {
 app.post('/api/robots/closest', (req: Request, res: Response, next: NextFunction) => {
   // 1. Check for valid request. If not, send error.
   const loadInfo: LoadInfo = JSON.parse(JSON.stringify(req.query));
-
   if (isNaN(loadInfo.x)) {
     res.status(400).send('x required.'); 
     return;
@@ -34,8 +33,10 @@ app.post('/api/robots/closest', (req: Request, res: Response, next: NextFunction
       const robotList = JSON.parse(data);
       const result = findClosestRobotAndDistance(robotList, loadInfo);
       res.status(200).json(result);
+      return;
     });
   }).on('error', (err) => {
     res.status(400).send(err.message);
+    return;
   });
 });
