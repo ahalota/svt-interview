@@ -2,8 +2,11 @@
 
 prompt: https://github.com/SVT-Robotics/recruiting-takehome-services
 
-## Running and testing API:
-1. Clone this repo
+## Prereqs:
+- node.js: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-installer-to-install-node-js-and-npm
+
+## Running and Testing API:
+1. Clone this repo (or download)
 2. Run `npm run start`
 - You may have to follow the command line prompts to install additional libraries
     - Not sure I properly added them all to save-dev
