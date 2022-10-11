@@ -23,7 +23,6 @@ test('Picks max battery robot within 10 units', () => {
         Math.pow(farRobotHighBattery.x-loadOneOne.x,2) +
         Math.pow(farRobotHighBattery.y-loadOneOne.y,2)
     );
-
     expect(findClosestRobotAndDistance([farRobotHighBattery,nearRobotLowBattery], loadOneOne))
     .toEqual({robotId: farRobotHighBattery.robotId, distanceToGoal: expectedDistance, batteryLevel: farRobotHighBattery.batteryLevel});
 });
@@ -35,7 +34,6 @@ test('Picks closest outside of 10 units (ignores battery)', () => {
         Math.pow(nearRobotLowBattery.x-loadZeroZero.x,2)+
         Math.pow(nearRobotLowBattery.y-loadZeroZero.y,2)
     );
-
     expect(findClosestRobotAndDistance([farRobotHighBattery,nearRobotLowBattery], loadZeroZero))
     .toEqual({robotId: nearRobotLowBattery.robotId, distanceToGoal: expectedDistance, batteryLevel: nearRobotLowBattery.batteryLevel});
     //Make sure order doesn't matter
