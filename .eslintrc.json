@@ -4,7 +4,7 @@
         "commonjs": true,
         "es2021": true
     },
-    "extends": "standard-with-typescript",
+    "extends": "eslint:recommended",
     "overrides": [
     ],
     "parserOptions": {
@@ -12,5 +12,8 @@
         "project" : ["tsconfig.json"]
     },
     "rules": {
+        "semi" : ["error", "always"],
+        "quotes": ["error", "double"],
+        "comma-dangle": ["error", "always"]
     }
 }
