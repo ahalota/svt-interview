@@ -20,3 +20,5 @@ prompt: https://github.com/SVT-Robotics/recruiting-takehome-services
 2. Set specific package versions for node modules
 3. Set up logging
 4. Gracefully handle invalid inputs
+5. Handle fail-over if first robotList API endpoint fails. 
+    - Gracefully handle both endpoints failing.
