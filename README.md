@@ -2,6 +2,8 @@
 
 prompt: https://github.com/SVT-Robotics/recruiting-takehome-services
 
+Assignment took ~4-8 hrs, including software installation time, and no prior node.js knowledge.
+
 ## Prereqs:
 - node.js: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-installer-to-install-node-js-and-npm
 
